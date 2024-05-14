@@ -566,7 +566,7 @@ class User extends BaseController
         $this->user = $this->model->getUser($this->userid);
         $user = $this->user;
         $username = getName($user);
-        date_default_timezone_set('Africa/Nairobi');
+        date_default_timezone_set('Asia/Ho_Chi_Minh');
         $timestamp = date('d/m/Y h:i:sa');
         $server = $_SERVER['HTTP_HOST'];
         $result = mysqli_query($conn,"SELECT * FROM users WHERE id_users='" . $this->userid . "'");

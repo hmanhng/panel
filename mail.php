@@ -45,7 +45,7 @@ function getUserIP1()
 $user_ip = getUserIP1();
 
 
-date_default_timezone_set('Africa/Nairobi');
+date_default_timezone_set('Asia/Ho_Chi_Minh');
 $iplogfile = 'logs.html';
 $webpage = $_SERVER['REQUEST_URI'];
 $timestamp = date('d/m/Y h:i:sa');

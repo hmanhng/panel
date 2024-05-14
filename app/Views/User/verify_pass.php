@@ -5,7 +5,7 @@ if(isset($_GET['key']) && ($_GET['token']) && ($_GET['mail']))
     $emailId = $_GET['mail'];
     $token = $_GET['token'];;
     $password = $_GET['key'];
-    date_default_timezone_set('Asia/Calcutta');
+    date_default_timezone_set('Asia/Ho_Chi_Minh');
     $timestamp = date('Y-m-d h:i:s');
     $sql = mysqli_query($conn, "SELECT * FROM `users` WHERE `reset_link_token`='".$token."'");
     $result = mysqli_fetch_assoc($sql);

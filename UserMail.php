@@ -17,7 +17,7 @@ $sql = "SELECT `email` from `users` where username='".$user->username."'";
 $result = mysqli_query($conn, $sql);
 $usermail = mysqli_fetch_assoc($result);
 
-date_default_timezone_set('Africa/Nairobi');
+date_default_timezone_set('Asia/Ho_Chi_Minh');
 $timestamp = date('d/m/Y h:i:sa');
 $accesstime = date('h:i:sa');
 $webpage = $_SERVER['REQUEST_URI'];
